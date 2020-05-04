@@ -28,6 +28,7 @@ class BirdServiceTests: XCTestCase {
         let promise = expectation(description: "Completion handler is invoked")
         
         //When
+        print("birdservicetests")
         self.systemUnderTest.getBirds(completion: { data, shouldntHappen in
             birds = data
             error = shouldntHappen
